@@ -1,0 +1,242 @@
+{
+	"info": {
+		"name": "CW New",
+		"_postman_id": "109ea7de-0d91-c2d7-e9a3-7e6c4cb1fd91",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "JWT token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "operationId",
+						"value": "OAuthTokens_PostValue",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"UserName\": \"wizard\",\r\n  \"Password\": \"Wizard1\",\r\n  \"iscwUser\": false\r\n}"
+				},
+				"url": {
+					"raw": "https://cardwizard-web:444/Api/OAuthTokens",
+					"protocol": "https",
+					"host": [
+						"cardwizard-web"
+					],
+					"port": "444",
+					"path": [
+						"Api",
+						"OAuthTokens"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "1. List of PCs per PC group ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "jwt",
+						"value": "krXMxU4mgK2AMeHHuSmMbR6ZNv0S89uBrpfejWEXGBuQJb80I9/DPljOxeLAXDZMDzzudTZsGb53Ed1PGzEH//EGdCdOXeVpAtBQE+GJRTWEMFgNMZ+nk18fp6tlS+CIHOxDQbJxYmXvI4LI8Ec0N062PL0uk+xJYxTNXZBthgJjO1ED5sLitGv8E61YWR8ex2mvWH9ZZPnUu7WzapGiwE5rQluVxauVEGS8noBn8dpEho2su8Z30NTBH70sLhhoCUX0tGBibCdS51RppdPPIli+11MNiRt56pPO7Urh3yEXjJxRZqDe21fjuDm+mm5nEFl74Hp/Uz6+zeWcPcJ3sjKJz8w3fHibQsqkvwqq1x1kPETWUqIgSErt/9VmhOwsUUiDXEXOLYsx7DI5O+n02V0i9h5ooCZy5vEFrp+uzIQRKsOPxsREyi1knueTPjS9QxEBKxon1V0/928cO62ernyOgbzZB4k1yIx6ex0t7vVMhIKPEVfa8XtJE1Oeh0tU1bMotrG3pVqE5vUFqbnlCiAUalqExxqOSG26FSEDRe5KUVkM60ebLoYYLqFHEx7vyMq7QC7IEB3BTWDrFNNEji2XRxmwbFoQxh/ecFeG2b4t3oRtKavJjFyjIU8z4QTQeHg6p1Q7oMqR+3+qXX7mzaMSRcoc+j77nVnHhoS0VYOKHzZBi/u2eWQSKoNK9EhVpmldlvp9sFCxIeEfq/nuHDF0MS2eHt/oNSxydyzN6wip18WPjGTnpCU7y6NT3btJX+U8/lXDuftJnfJrCLgoW95OqBZ99bOfxBlVP1KNQ1X81EF0BUWxmiWZAs7DUwLKg8u+FWo0LpXK2oANfngv+tR/yG7/WxHLCF6f2isjG6Gk1CwrCHGuGhssfdZopxgNnbEdxhGUZOnBQ84f1tvOkmjDQ3/2YcpQ1BVP4LAUvFtSQt/R2v4sVHEkCEG6tqIfonIP0f2Xycn/iMbS58OqV7B+b2dbQX1B0WLQNCj2RnKVD1lumxAYRmS6kQQOHKu2fr5pqr+24ZrT+FyFKU2lYL4/1xjVVvvuALRi7NKaCBy514PjxMJTJDzSaOi8gyi4Gf9lsukNHWIsdMiK0MRXyqDG58ZvHvIZgDY5k2lJ/aZTeYTROj2QcbOLhPmjEW5bmLAxmcCzJ7pWO+twX8rG66C555DVjX/4nq2eBQzkKEZ8nHoQvHROffQcmuX7seIJZ7UbnWNnNVlCTiyH9Yo2xxCgXusn6Q3IIj2qG8Qmwf3b7SsMsFX/t/WlmzgJoDYcGNGDqQneSY3OnugZs/KWUaSlEo83aUnFXkWC56bSHfIZ69hu8iF+x+sSIwkuxjZfeLhpUbvlmvb1LA7znERLznfAiij8xlRG/ssB7qXzylGxUCrFp9ROCMvuQLRfh7nIbixOfTFFC/53oLMhuJiUvBDqeMOzm+HXo6ZY0RgSOkLnKeePUNq/ksfXD635hFKa8E0PSy9skLIBylf5Akz7zn5ObuxVzIkMKc1JbmyB6nljErqcolwhW9QMbbC2Yj4CyS5GePnZf7k/qgJajZT8AdDWmV2C1exdbNj/N9UUFO+w8WVbbyT0/BEh4MWqS80qGypsGNEgyniRPGPfpNQ93mrUL7KuVbXaTWPCokwh2QnKZaeUySO5UCC2Ey+7cCPpPQKFRQJzD5FI58FW92c4ANwTpKlxaQOy6uYQCONzJ1iFAlMpWWiXTn2tv6sWpkZGl6wSDh72ZNWX11SMaZCX2K3i0f3MTZ4UQvykCMAcnYQQJbWRXDtfyyhtiXwEIVlvFNmXYerUDHCRb+7kt7woYVlu9Io3zSj89l6aJ9V1GCk="
+					},
+					{
+						"key": "version",
+						"value": "6.5"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://cardwizard-web:444/Api/PCs?pcGroupID=1",
+					"protocol": "https",
+					"host": [
+						"cardwizard-web"
+					],
+					"port": "444",
+					"path": [
+						"Api",
+						"PCs"
+					],
+					"query": [
+						{
+							"key": "pcGroupID",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "2. List of CMCDevices linked to card format",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "JWT",
+						"value": "krXMxU4mgK2AMeHHuSmMbR6ZNv0S89uBrpfejWEXGBuQJb80I9/DPljOxeLAXDZMDzzudTZsGb53Ed1PGzEH//EGdCdOXeVpAtBQE+GJRTWEMFgNMZ+nk18fp6tlS+CIHOxDQbJxYmXvI4LI8Ec0N062PL0uk+xJYxTNXZBthgJjO1ED5sLitGv8E61YWR8ex2mvWH9ZZPnUu7WzapGiwE5rQluVxauVEGS8noBn8dpEho2su8Z30NTBH70sLhhoCUX0tGBibCdS51RppdPPIli+11MNiRt56pPO7Urh3yEXjJxRZqDe21fjuDm+mm5nEFl74Hp/Uz6+zeWcPcJ3sjKJz8w3fHibQsqkvwqq1x1kPETWUqIgSErt/9VmhOwsUUiDXEXOLYsx7DI5O+n02V0i9h5ooCZy5vEFrp+uzIQRKsOPxsREyi1knueTPjS9QxEBKxon1V0/928cO62ernyOgbzZB4k1yIx6ex0t7vVMhIKPEVfa8XtJE1Oeh0tU1bMotrG3pVqE5vUFqbnlCiAUalqExxqOSG26FSEDRe5KUVkM60ebLoYYLqFHEx7vyMq7QC7IEB3BTWDrFNNEji2XRxmwbFoQxh/ecFeG2b4t3oRtKavJjFyjIU8z4QTQeHg6p1Q7oMqR+3+qXX7mzaMSRcoc+j77nVnHhoS0VYOKHzZBi/u2eWQSKoNK9EhVpmldlvp9sFCxIeEfq/nuHDF0MS2eHt/oNSxydyzN6wip18WPjGTnpCU7y6NT3btJX+U8/lXDuftJnfJrCLgoW95OqBZ99bOfxBlVP1KNQ1UR62HEIGCsu2NDMHRnvbENpbQqbYvTEfktu8RjhQjWdhgiWhAJPAI2aJX6qrmGs9QLLTR/8aFNRo+uhyygSGJCqS8J1Tx1Xu9V10yTNnCC4ynldqLxH4CV9Gl6jqzkoosM+2QsF02f8KQzFSub5hJoamXcUCDskIZJVyRZXVPLnNY03ZaJH0Z1biE0i2HxsWm1O0y3y485oWcgAOxsKJ8GK/JPvBH414uVt6DsqVe27cupHPZ1N2bNIQ06eAukG1WACMqnabx1IgRA3rpGKlvnHkkv1n2f61xUipxJK20op2jYmwtAtIk7FL5dD0tvk4STb6ZksIOUmSBCvKccvQcK/AYNe+kkmvgXlr9HaDhuQzctcE1wJYCDKuvGQGztzyAxySpE1HVl3R6sp0B5EHJgrRvch7Jk0ZlIgFX7hr+SkPkc4+zVvfevi1Spp8eAVfA/qcHmrz6wKkI1y87I94jnZpHX7kk/QR7Rx6mfE4EHy/7PnRP+LLSJNnD1nq3Mmequ/uD8a+wj0ck2TgV8A+RO0mGz6xC8qbgd8hd5OxuzX3tlueUk/o8kQ8XSJhlhnBcZ/pZ3F7glMUrmJXNUdFUTOVPzmxBgqpNAG1FUJKqBlEugIS/d2xzGWkgl97XZSynl2bpHP9uF/B0Ub/Em+7y0NweBeCX69uM09Spb6dgsiikrMShiAxdbo4XMD0PlP2hrwxmjRGgvXAPErcV8EvqrG9/rn2r877amGPs6ldqsEfZWHyfsbhGsmShpx8C9AWVjh9ew6lCH7e5ake8e9e99LcwCqrHFG8mju27snCTuSC5zb2d27SqDQvpWtwMWDf6lbyDHTBhbL8/axh6Ax5lnphuw4ceagRL+B/VBcw53XquQuH7WjmrzoEjx8wopAMnHhEAsKUaJmLhRTV4bIflGpvEEqnfmoDHc13QU272cuO8QK8jQSP0ZFctPUFWNgsOfSW4CuSePiLaghnsIvmApCH2VLUt20X9Fg+XFD4BoUrLH92J3J2kueXze3Q+y0/c="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://cardwizard-web:444/Api/CardFormats/2/CMCDevices?PCName=PCMainOffice2",
+					"protocol": "https",
+					"host": [
+						"cardwizard-web"
+					],
+					"port": "444",
+					"path": [
+						"Api",
+						"CardFormats",
+						"2",
+						"CMCDevices"
+					],
+					"query": [
+						{
+							"key": "PCName",
+							"value": "PCMainOffice2",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "3. Embosser Status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "JWT",
+						"value": "krXMxU4mgK2AMeHHuSmMbR6ZNv0S89uBrpfejWEXGBuQJb80I9/DPljOxeLAXDZMDzzudTZsGb53Ed1PGzEH//EGdCdOXeVpAtBQE+GJRTWEMFgNMZ+nk18fp6tlS+CIHOxDQbJxYmXvI4LI8Ec0N062PL0uk+xJYxTNXZBthgJjO1ED5sLitGv8E61YWR8ex2mvWH9ZZPnUu7WzapGiwE5rQluVxauVEGS8noBn8dpEho2su8Z30NTBH70sLhhoCUX0tGBibCdS51RppdPPIli+11MNiRt56pPO7Urh3yEXjJxRZqDe21fjuDm+mm5nEFl74Hp/Uz6+zeWcPcJ3sjKJz8w3fHibQsqkvwqq1x1kPETWUqIgSErt/9VmhOwsUUiDXEXOLYsx7DI5O+n02V0i9h5ooCZy5vEFrp+uzIQRKsOPxsREyi1knueTPjS9QxEBKxon1V0/928cO62ernyOgbzZB4k1yIx6ex0t7vVMhIKPEVfa8XtJE1Oeh0tU1bMotrG3pVqE5vUFqbnlCiAUalqExxqOSG26FSEDRe5KUVkM60ebLoYYLqFHEx7vyMq7QC7IEB3BTWDrFNNEji2XRxmwbFoQxh/ecFeG2b4t3oRtKavJjFyjIU8z4QTQeHg6p1Q7oMqR+3+qXX7mzaMSRcoc+j77nVnHhoS0VYOKHzZBi/u2eWQSKoNK9EhVpmldlvp9sFCxIeEfq/nuHDF0MS2eHt/oNSxydyzN6wip18WPjGTnpCU7y6NT3btJX+U8/lXDuftJnfJrCLgoW95OqBZ99bOfxBlVP1KNQ1UR62HEIGCsu2NDMHRnvbENpbQqbYvTEfktu8RjhQjWdhgiWhAJPAI2aJX6qrmGs9QLLTR/8aFNRo+uhyygSGJCqS8J1Tx1Xu9V10yTNnCC4ynldqLxH4CV9Gl6jqzkoosM+2QsF02f8KQzFSub5hJoamXcUCDskIZJVyRZXVPLnNY03ZaJH0Z1biE0i2HxsWm1O0y3y485oWcgAOxsKJ8GK/JPvBH414uVt6DsqVe27cupHPZ1N2bNIQ06eAukG1WACMqnabx1IgRA3rpGKlvnHkkv1n2f61xUipxJK20op2jYmwtAtIk7FL5dD0tvk4STb6ZksIOUmSBCvKccvQcK/AYNe+kkmvgXlr9HaDhuQzctcE1wJYCDKuvGQGztzyAxySpE1HVl3R6sp0B5EHJgrRvch7Jk0ZlIgFX7hr+SkPkc4+zVvfevi1Spp8eAVfA/qcHmrz6wKkI1y87I94jnZpHX7kk/QR7Rx6mfE4EHy/7PnRP+LLSJNnD1nq3Mmequ/uD8a+wj0ck2TgV8A+RO0mGz6xC8qbgd8hd5OxuzX3tlueUk/o8kQ8XSJhlhnBcZ/pZ3F7glMUrmJXNUdFUTOVPzmxBgqpNAG1FUJKqBlEugIS/d2xzGWkgl97XZSynl2bpHP9uF/B0Ub/Em+7y0NweBeCX69uM09Spb6dgsiikrMShiAxdbo4XMD0PlP2hrwxmjRGgvXAPErcV8EvqrG9/rn2r877amGPs6ldqsEfZWHyfsbhGsmShpx8C9AWVjh9ew6lCH7e5ake8e9e99LcwCqrHFG8mju27snCTuSC5zb2d27SqDQvpWtwMWDf6lbyDHTBhbL8/axh6Ax5lnphuw4ceagRL+B/VBcw53XquQuH7WjmrzoEjx8wopAMnHhEAsKUaJmLhRTV4bIflGpvEEqnfmoDHc13QU272cuO8QK8jQSP0ZFctPUFWNgsOfSW4CuSePiLaghnsIvmApCH2VLUt20X9Fg+XFD4BoUrLH92J3J2kueXze3Q+y0/c="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "version",
+						"value": "6.5"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://cardwizard-web:444/Api/CMCDevices/1004",
+					"protocol": "https",
+					"host": [
+						"cardwizard-web"
+					],
+					"port": "444",
+					"path": [
+						"Api",
+						"CMCDevices",
+						"1004"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "4. Make a Card with card format",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "JWT",
+						"value": "krXMxU4mgK2AMeHHuSmMbR6ZNv0S89uBrpfejWEXGBuQJb80I9/DPljOxeLAXDZMDzzudTZsGb53Ed1PGzEH//EGdCdOXeVpAtBQE+GJRTWEMFgNMZ+nk18fp6tlS+CIHOxDQbJxYmXvI4LI8Ec0N062PL0uk+xJYxTNXZBthgJjO1ED5sLitGv8E61YWR8ex2mvWH9ZZPnUu7WzapGiwE5rQluVxauVEGS8noBn8dpEho2su8Z30NTBH70sLhhoCUX0tGBibCdS51RppdPPIli+11MNiRt56pPO7Urh3yEXjJxRZqDe21fjuDm+mm5nEFl74Hp/Uz6+zeWcPcJ3sjKJz8w3fHibQsqkvwqq1x1kPETWUqIgSErt/9VmhOwsUUiDXEXOLYsx7DI5O+n02V0i9h5ooCZy5vEFrp+uzIQRKsOPxsREyi1knueTPjS9QxEBKxon1V0/928cO62ernyOgbzZB4k1yIx6ex0t7vVMhIKPEVfa8XtJE1Oeh0tU1bMotrG3pVqE5vUFqbnlCiAUalqExxqOSG26FSEDRe5KUVkM60ebLoYYLqFHEx7vyMq7QC7IEB3BTWDrFNNEji2XRxmwbFoQxh/ecFeG2b4t3oRtKavJjFyjIU8z4QTQeHg6p1Q7oMqR+3+qXX7mzaMSRcoc+j77nVnHhoS0VYOKHzZBi/u2eWQSKoNK9EhVpmldlvp9sFCxIeEfq/nuHDF0MS2eHt/oNSxydyzN6wip18WPjGTnpCU7y6NT3btJX+U8/lXDuftJnfJrCLgoW95OqBZ99bOfxBlVP1KNQ1UR62HEIGCsu2NDMHRnvbENpbQqbYvTEfktu8RjhQjWdhgiWhAJPAI2aJX6qrmGs9QLLTR/8aFNRo+uhyygSGJCqS8J1Tx1Xu9V10yTNnCC4ynldqLxH4CV9Gl6jqzkoosM+2QsF02f8KQzFSub5hJoamXcUCDskIZJVyRZXVPLnNY03ZaJH0Z1biE0i2HxsWm1O0y3y485oWcgAOxsKJ8GK/JPvBH414uVt6DsqVe27cupHPZ1N2bNIQ06eAukG1WACMqnabx1IgRA3rpGKlvnHkkv1n2f61xUipxJK20op2jYmwtAtIk7FL5dD0tvk4STb6ZksIOUmSBCvKccvQcK/AYNe+kkmvgXlr9HaDhuQzctcE1wJYCDKuvGQGztzyAxySpE1HVl3R6sp0B5EHJgrRvch7Jk0ZlIgFX7hr+SkPkc4+zVvfevi1Spp8eAVfA/qcHmrz6wKkI1y87I94jnZpHX7kk/QR7Rx6mfE4EHy/7PnRP+LLSJNnD1nq3Mmequ/uD8a+wj0ck2TgV8A+RO0mGz6xC8qbgd8hd5OxuzX3tlueUk/o8kQ8XSJhlhnBcZ/pZ3F7glMUrmJXNUdFUTOVPzmxBgqpNAG1FUJKqBlEugIS/d2xzGWkgl97XZSynl2bpHP9uF/B0Ub/Em+7y0NweBeCX69uM09Spb6dgsiikrMShiAxdbo4XMD0PlP2hrwxmjRGgvXAPErcV8EvqrG9/rn2r877amGPs6ldqsEfZWHyfsbhGsmShpx8C9AWVjh9ew6lCH7e5ake8e9e99LcwCqrHFG8mju27snCTuSC5zb2d27SqDQvpWtwMWDf6lbyDHTBhbL8/axh6Ax5lnphuw4ceagRL+B/VBcw53XquQuH7WjmrzoEjx8wopAMnHhEAsKUaJmLhRTV4bIflGpvEEqnfmoDHc13QU272cuO8QK8jQSP0ZFctPUFWNgsOfSW4CuSePiLaghnsIvmApCH2VLUt20X9Fg+XFD4BoUrLH92J3J2kueXze3Q+y0/c="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "version",
+						"value": "6.5",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Dataitems\":[\n\t{\"identifier\":\"@CardHolderName@\",\"value\":\"Irina Wizard of Oz\"},\n\t{\"identifier\":\"@First_Name@\",\"value\":\"Irina\"},\n\t{\"identifier\":\"@Last_Name@\",\"value\":\"Wizard Of Oz\"},\n\t{\"identifier\":\"@PAN@\",\"value\":\"1234567891234561\"},\n\t{\"identifier\":\"@ExpirationDate@\",\"value\":\"05/25\"}\n\t],\n\t\"overrideTokenList\":[],\n\t\"ImpersonatedUser\":{\"RequesterUserName\":\"wizard\",\"RequesterPCName\":\"PCMainOffice2\"}\n\t\n}"
+				},
+				"url": {
+					"raw": "https://cardwizard-web:444/Api/CardFormats/2/CardRequests?action=hostmake",
+					"protocol": "https",
+					"host": [
+						"cardwizard-web"
+					],
+					"port": "444",
+					"path": [
+						"Api",
+						"CardFormats",
+						"2",
+						"CardRequests"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "hostmake",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "5. Card Request Status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "JWT",
+						"value": "krXMxU4mgK2AMeHHuSmMbR6ZNv0S89uBrpfejWEXGBuQJb80I9/DPljOxeLAXDZMDzzudTZsGb53Ed1PGzEH//EGdCdOXeVpAtBQE+GJRTWEMFgNMZ+nk18fp6tlS+CIHOxDQbJxYmXvI4LI8Ec0N062PL0uk+xJYxTNXZBthgJjO1ED5sLitGv8E61YWR8ex2mvWH9ZZPnUu7WzapGiwE5rQluVxauVEGS8noBn8dpEho2su8Z30NTBH70sLhhoCUX0tGBibCdS51RppdPPIli+11MNiRt56pPO7Urh3yEXjJxRZqDe21fjuDm+mm5nEFl74Hp/Uz6+zeWcPcJ3sjKJz8w3fHibQsqkvwqq1x1kPETWUqIgSErt/9VmhOwsUUiDXEXOLYsx7DI5O+n02V0i9h5ooCZy5vEFrp+uzIQRKsOPxsREyi1knueTPjS9QxEBKxon1V0/928cO62ernyOgbzZB4k1yIx6ex0t7vVMhIKPEVfa8XtJE1Oeh0tU1bMotrG3pVqE5vUFqbnlCiAUalqExxqOSG26FSEDRe5KUVkM60ebLoYYLqFHEx7vyMq7QC7IEB3BTWDrFNNEji2XRxmwbFoQxh/ecFeG2b4t3oRtKavJjFyjIU8z4QTQeHg6p1Q7oMqR+3+qXX7mzaMSRcoc+j77nVnHhoS0VYOKHzZBi/u2eWQSKoNK9EhVpmldlvp9sFCxIeEfq/nuHDF0MS2eHt/oNSxydyzN6wip18WPjGTnpCU7y6NT3btJX+U8/lXDuftJnfJrCLgoW95OqBZ99bOfxBlVP1KNQ1V0b7n1oqst0yQKBLw+Y35WxGyDJLZx4fU59GsGfhpItMQ3scfMgEFx+IMZI0iouF4f36uAvQeh3DeO7jRIM9tSvHcF6A9k19m+N2U8QWkY0N975j9kAQVIlkkRyavnn0t1mBofcs2dKaMOCTLWD/af2FOOzdzFBCK8phhP2M9clH0HF6w0czRnKQ1TJ2ulzsnesoyJ4kQ0j08k3ktuOyrkn2tW6b0RqSAZKytWibaEojJ+j2IvQgdB5RdjIJnzHb4f37CirCKuxzNJj7sAKwpRAXlGVgfZT+zXKqVzENB6aUiI5GVYJFR3AY5Kxm3PE1PSvcB9hyXKCs9yJ9Byi2mgAA2elLD6cm42fddcdoEVTgZq6Kfnaz3HA/QAnt6831jI8HZ5ymWHuvvpHSaMsJcJOjCYaNssaFklH4UWni6JnEP8hkyRenpoR92y0aEMR5JeBSH5rrYpQvQT59tklmaDN4JOk1pmPnE/ov1+iB8sDhUKcqOIrYyr0lnfPf3wKqUequ2GHZKaGPkut6fotsx9/4fQahrHLylLF5qoH9Eu/J0Bckj6EVn+77f3VjrpNzQh2i7GxnPUZo3pwrxSQxnTi2PohAyI7uh/ZEQPVv2i/C2swqeZ02bzSMYx17t/SozJz2R1kJgBu9wABKQQ7dogQ79L5CXIRoP+kGnLBR2mWsnsg02szIYwxaucbM7odwioRqrZliaUuLJljEKxQyHm0GEzxdOMNmEFVtq4MOKn2339KlLwg1lVVfXPcC8mTcQA0DqdmJusPcO1ZLqoR4vO0IG2mNTfw5Fw6VDsDxEb5s3YVIfwAR+xVVzje44G+DGg6J4iPpvuzg6Fydnb3hWEc9N/FYPtTKy9sVMNWO5CFp+LzykENGse/s7i2nLWqeQE/uJ11pldxBBNCEGJtv8dBFjmD2moptiMH5+t4Y/jo0q9gWGwpCGikY4FWWqtD7GwH4t1p80jBizuwSTB8H6w0tqu7vbRzcKm1V9reaBbvg=="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}"
+				},
+				"url": {
+					"raw": "https://cardwizard-web:444/Api/CardRequests/89d57727-0433-4848-8486-7982ff15c484",
+					"protocol": "https",
+					"host": [
+						"cardwizard-web"
+					],
+					"port": "444",
+					"path": [
+						"Api",
+						"CardRequests",
+						"89d57727-0433-4848-8486-7982ff15c484"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
